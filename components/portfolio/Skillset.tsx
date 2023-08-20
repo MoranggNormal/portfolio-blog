@@ -71,7 +71,7 @@ const Skillset = () => {
           </div>
         ))}
       </div>
-      <p className="w-full px-40 py-10 text-center text-gray-500 ">
+      <p className="w-full lg:px-40 py-10 leading-6 text-center text-gray-500 ">
         In addition to my expertise in the technologies mentioned above, I also
         have experience with Kubernetes, Terraform, Next.js and more. I am
         committed to continuous learning and staying up-to-date with the latest

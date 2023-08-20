@@ -9,20 +9,24 @@ const Formations = () => {
         </h2>
 
         <div className="mt-8 space-y-8">
-          <div className="flex flex-col md:flex-row">
+
+        <div className="flex flex-col md:flex-row">
             <div className="w-full text-center md:w-1/4">
               <img
                 src="https://via.placeholder.com/800x600?text=Slide%203"
-                alt="Institution Name 1"
+                alt="Company Name 1"
                 className="mx-auto h-20 w-20"
               />
             </div>
-            <div className="w-full md:w-3/4">
-              <h3 className="text-xl font-semibold">Course Name 1</h3>
+            <div className="w-full md:w-3/4 px-8 lg:px-0">
+              <h3 className="text-xl font-semibold text-center py-4 lg:py-8 lg:text-left">Course Name 1</h3>
               <p className="text-gray-500">
-                Institution Name 1 • Conclusion Date
+              Institution Name 1 • Conclusion Date
               </p>
-              <p>Course description.</p>
+              <ul className="ml-6 mt-4 list-disc space-y-2">
+                <li>Course description 1</li>
+                <li>Course description 2</li>
+              </ul>
             </div>
           </div>
 
@@ -30,18 +34,23 @@ const Formations = () => {
             <div className="w-full text-center md:w-1/4">
               <img
                 src="https://via.placeholder.com/800x600?text=Slide%203"
-                alt="Institution Name 2"
+                alt="Company Name 1"
                 className="mx-auto h-20 w-20"
               />
             </div>
-            <div className="w-full md:w-3/4">
-              <h3 className="text-xl font-semibold">Course Name 2</h3>
+            <div className="w-full md:w-3/4 px-8 lg:px-0">
+              <h3 className="text-xl font-semibold text-center py-4 lg:py-8 lg:text-left">Course Name 2</h3>
               <p className="text-gray-500">
-                Institution Name 2 • Conclusion Date
+              Institution Name 2 • Conclusion Date
               </p>
-              <p>Course description.</p>
+              <ul className="ml-6 mt-4 list-disc space-y-2">
+                <li>Course description 1</li>
+                <li>Course description 2</li>
+              </ul>
             </div>
           </div>
+ 
+
         </div>
       </div>
     </div>
