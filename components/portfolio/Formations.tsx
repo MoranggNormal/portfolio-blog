@@ -20,7 +20,7 @@ const Formations = () => {
                   width={250}
                   height={250}
                   alt="Auryn Web to Print"
-                  className="mx-auto h-20 w-20"
+                  className="mx-auto h-20 w-20 rounded"
                 />
               </div>
               <div className="flex flex-col px-8 lg:px-8">
@@ -45,7 +45,7 @@ const Formations = () => {
                   width={250}
                   height={250}
                   alt="Auryn Web to Print"
-                  className="mx-auto h-20 w-20"
+                  className="mx-auto h-20 w-20 rounded"
                 />
               </div>
               <div className="flex flex-col px-8 lg:px-8">
