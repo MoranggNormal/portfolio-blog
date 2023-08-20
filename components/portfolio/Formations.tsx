@@ -1,5 +1,8 @@
 import React from 'react';
 
+import uninter from '../../assets/images/uninter.png';
+import Image from 'next/image';
+
 const Formations = () => {
   return (
     <div className="bg-slate-50 py-24">
@@ -9,48 +12,55 @@ const Formations = () => {
         </h2>
 
         <div className="mt-8 space-y-8">
-
-        <div className="flex flex-col md:flex-row">
-            <div className="w-full text-center md:w-1/4">
-              <img
-                src="https://via.placeholder.com/800x600?text=Slide%203"
-                alt="Company Name 1"
-                className="mx-auto h-20 w-20"
-              />
-            </div>
-            <div className="w-full md:w-3/4 px-8 lg:px-0">
-              <h3 className="text-xl font-semibold text-center py-4 lg:py-8 lg:text-left">Course Name 1</h3>
-              <p className="text-gray-500">
-              Institution Name 1 • Conclusion Date
-              </p>
-              <ul className="ml-6 mt-4 list-disc space-y-2">
-                <li>Course description 1</li>
-                <li>Course description 2</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row">
-            <div className="w-full text-center md:w-1/4">
-              <img
-                src="https://via.placeholder.com/800x600?text=Slide%203"
-                alt="Company Name 1"
-                className="mx-auto h-20 w-20"
-              />
-            </div>
-            <div className="w-full md:w-3/4 px-8 lg:px-0">
-              <h3 className="text-xl font-semibold text-center py-4 lg:py-8 lg:text-left">Course Name 2</h3>
-              <p className="text-gray-500">
-              Institution Name 2 • Conclusion Date
-              </p>
-              <ul className="ml-6 mt-4 list-disc space-y-2">
-                <li>Course description 1</li>
-                <li>Course description 2</li>
-              </ul>
+          <div className="mt-8 w-full space-y-8 lg:flex">
+            <div className="flex w-full flex-col justify-center md:flex-row">
+              <div>
+                <Image
+                  src={uninter.src}
+                  width={250}
+                  height={250}
+                  alt="Auryn Web to Print"
+                  className="mx-auto h-20 w-20"
+                />
+              </div>
+              <div className="flex flex-col px-8 lg:px-8">
+                <h3 className="py-4 text-center text-xl font-semibold lg:py-0 lg:text-left">
+                Software Engineering
+                </h3>
+                <p className="text-center text-gray-500 lg:text-left">
+                  • Uninter
+                </p>
+                <p className="text-center text-gray-500 lg:text-left">
+                  • 07/2023 - 07/2028
+                </p>
+              </div>
             </div>
           </div>
- 
 
+          <div className="mt-8 w-full space-y-8 lg:flex">
+            <div className="flex w-full flex-col justify-center md:flex-row">
+              <div>
+                <Image
+                  src={uninter.src}
+                  width={250}
+                  height={250}
+                  alt="Auryn Web to Print"
+                  className="mx-auto h-20 w-20"
+                />
+              </div>
+              <div className="flex flex-col px-8 lg:px-8">
+                <h3 className="py-4 text-center text-xl font-semibold lg:py-0 lg:text-left">
+                Analysis and Systems Development
+                </h3>
+                <p className="text-center text-gray-500 lg:text-left">
+                  • Uninter
+                </p>
+                <p className="text-center text-gray-500 lg:text-left">
+                  • 05/2022 - 06/2023 (Course enrollment suspended)
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
