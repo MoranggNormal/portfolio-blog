@@ -1,61 +1,65 @@
-import React from 'react';
+"use client"
+
+import { useState } from "react";
+
+const images = [
+  'https://via.placeholder.com/1900x1080?text=Slide%201',
+  'https://via.placeholder.com/1366x768?text=Slide%202',
+  'https://via.placeholder.com/800x600?text=Slide%203',
+];
+
 
 const MainProjects = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
+    );
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+    );
+  };
+
   return (
-    <div className="bg-white py-24">
-      <div className="mx-auto max-w-3xl">
-        <h2 className="text-center text-3xl font-semibold">
+    <div className="relative h-screen w-full overflow-hidden items-center">
+      <h2 className="text-center text-3xl font-semibold">
           Projetos Destacados
         </h2>
-
-        <div className="mt-8 space-y-8">
-          <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/3">
-              <img
-                src="https://cdn.pixabay.com/photo/2016/04/20/08/21/entrepreneur-1340649_1280.jpg"
-                alt="Projeto 1"
-                className="h-auto w-full rounded-lg"
-              />
-            </div>
-            <div className="w-full md:w-2/3">
-              <h3 className="text-xl font-semibold">Nome do Projeto 1</h3>
-              <p className="text-gray-500">Descrição concisa do projeto.</p>
-              <ul className="ml-6 mt-4 list-disc space-y-2">
-                <li>Tecnologias utilizadas: Next.js, Tailwind CSS, ...</li>
-                <li>Destaque 1: ...</li>
-                <li>Destaque 2: ...</li>
-              </ul>
-              <a href="#" className="mt-4 text-slate-800 hover:underline">
-                Ver Projeto
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/3">
-              <img
-                src="https://cdn.pixabay.com/photo/2016/04/20/08/21/entrepreneur-1340649_1280.jpg"
-                alt="Projeto 2"
-                className="h-auto w-full rounded-lg"
-              />
-            </div>
-            <div className="w-full md:w-2/3">
-              <h3 className="text-xl font-semibold">Nome do Projeto 2</h3>
-              <p className="text-gray-500">Descrição concisa do projeto.</p>
-              <ul className="ml-6 mt-4 list-disc space-y-2">
-                <li>Tecnologias utilizadas: Next.js, Tailwind CSS, ...</li>
-                <li>Destaque 1: ...</li>
-                <li>Destaque 2: ...</li>
-              </ul>
-              <a href="#" className="mt-4 text-slate-800 hover:underline">
-                Ver Projeto
-              </a>
-            </div>
-          </div>
+        <div
+          className={`absolute max-w-3xl mx-auto inset-0 flex items-center justify-center`}
+        >
+      {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            className={`inset-0 max-h-full max-w-full transitio-all duration-300 ${
+              index != activeIndex && 'hidden'
+            }`}
+            alt={`Slide ${index + 1}`}
+          />
+      ))}
+<button
+        className="absolute left-8 top-1/2 z-10 -translate-y-1/2 transform rounded bg-gray-800/50 p-2 text-white duration-300 hover:opacity-90"
+        onClick={handlePrev}
+      >
+        <i className="fa-solid fa-arrow-left"></i>
+      </button> 
+      <button
+        className="absolute right-8 top-1/2 z-10 -translate-y-1/2 transform rounded bg-gray-800/50 p-2 text-white duration-300 hover:opacity-90"
+        onClick={handleNext}
+      >
+        <i className="fa-solid fa-arrow-right"></i>
+      </button>
         </div>
-      </div>
+      
+      
     </div>
   );
 };
+
 
 export default MainProjects;
