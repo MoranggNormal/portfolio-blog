@@ -39,28 +39,24 @@ const HardAndSoftSkills = () => {
 
         <div className="mt-8 space-y-4 px-8 lg:px-20">
           <div className="flex items-center">
-            <i className="fab fa-icone-habilidade-1 text-4xl text-slate-800"></i>
             <span className="ml-2 text-lg font-semibold">
               • Knowledge of Agile Methodologies
             </span>
           </div>
 
           <div className="flex items-center">
-            <i className="fab fa-icone-habilidade-2 text-4xl text-slate-800"></i>
             <span className="ml-2 text-lg font-semibold">
               • Strong Team Collaboration
             </span>
           </div>
 
           <div className="flex items-center">
-            <i className="fab fa-icone-habilidade-2 text-4xl text-slate-800"></i>
             <span className="ml-2 text-lg font-semibold">
               • Problem Solving
             </span>
           </div>
 
           <div className="flex items-center">
-            <i className="fab fa-icone-habilidade-2 text-4xl text-slate-800"></i>
             <span className="ml-2 text-lg font-semibold">
               • Strong English Proficiency
             </span>
