@@ -2,7 +2,7 @@ import React from 'react';
 
 const Formations = () => {
   return (
-    <div className="bg-gray-100 py-24">
+    <div className="bg-slate-50 py-24">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-center text-3xl font-semibold">
           Educação e Formação
