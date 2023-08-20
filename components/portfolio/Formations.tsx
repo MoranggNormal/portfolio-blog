@@ -13,7 +13,7 @@ const Formations = () => {
 
         <div className="mt-8 space-y-8">
           <div className="mt-8 w-full space-y-8 lg:flex">
-            <div className="flex w-full flex-col justify-center md:flex-row">
+            <div className="flex w-full flex-col  md:flex-row">
               <div>
                 <Image
                   src={uninter.src}
@@ -25,7 +25,7 @@ const Formations = () => {
               </div>
               <div className="flex flex-col px-8 lg:px-8">
                 <h3 className="py-4 text-center text-xl font-semibold lg:py-0 lg:text-left">
-                Software Engineering
+                  Software Engineering
                 </h3>
                 <p className="text-center text-gray-500 lg:text-left">
                   • Uninter
@@ -38,7 +38,7 @@ const Formations = () => {
           </div>
 
           <div className="mt-8 w-full space-y-8 lg:flex">
-            <div className="flex w-full flex-col justify-center md:flex-row">
+            <div className="flex w-full flex-col  md:flex-row">
               <div>
                 <Image
                   src={uninter.src}
@@ -50,7 +50,7 @@ const Formations = () => {
               </div>
               <div className="flex flex-col px-8 lg:px-8">
                 <h3 className="py-4 text-center text-xl font-semibold lg:py-0 lg:text-left">
-                Analysis and Systems Development
+                  Analysis and Systems Development
                 </h3>
                 <p className="text-center text-gray-500 lg:text-left">
                   • Uninter
