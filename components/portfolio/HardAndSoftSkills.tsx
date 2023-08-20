@@ -8,7 +8,7 @@ const HardAndSoftSkills = () => {
           Hard Skills
         </h2>
 
-        <div className="mt-8 space-y-8 px-20">
+        <div className="mt-8 space-y-8 lg:px-20">
             <div className="flex items-center">
               <i className="fab fa-icone-habilidade-1 text-4xl text-slate-800"></i>
               <span className="ml-2 text-lg font-semibold">
@@ -31,7 +31,7 @@ const HardAndSoftSkills = () => {
           Soft Skills
         </h2>
 
-        <div className="mt-8 space-y-8 px-20">
+        <div className="mt-8 space-y-8 lg:px-20">
             <div className="flex items-center">
               <i className="fab fa-icone-habilidade-1 text-4xl text-slate-800"></i>
               <span className="ml-2 text-lg font-semibold">
