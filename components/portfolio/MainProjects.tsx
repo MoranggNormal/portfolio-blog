@@ -26,8 +26,8 @@ const MainProjects = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden items-center">
-      <h2 className="text-center text-3xl font-semibold">
-          Projetos Destacados
+      <h2 className="text-center text-3xl font-semibold py-28">
+          Featured Projects
         </h2>
         <div
           className={`absolute max-w-3xl mx-auto inset-0 flex items-center justify-center`}
@@ -36,7 +36,7 @@ const MainProjects = () => {
           <img
             key={index}
             src={image}
-            className={`inset-0 max-h-full max-w-full transitio-all duration-300 ${
+            className={`inset-0 rounded max-h-full max-w-full transitio-all duration-300 ${
               index != activeIndex && 'hidden'
             }`}
             alt={`Slide ${index + 1}`}
