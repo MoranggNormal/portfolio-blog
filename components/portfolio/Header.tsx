@@ -30,7 +30,7 @@ const navigation = [
 
 const Header = () => {
   return (
-    <header className="sticky inset-x-0 top-0 z-50 border-b border-gray-100 bg-white">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white">
       <nav className="flex justify-center p-6 lg:px-8" aria-label="Global">
         <div className="flex gap-x-8 lg:gap-x-12">
           {navigation.map((item) => (
