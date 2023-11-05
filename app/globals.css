@@ -15,3 +15,31 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.r1::selection {
+  background-color: #ff0000;
+}
+
+.r2::selection {
+  background-color: #ffa500;
+}
+
+.r3::selection {
+  background-color: #ffff00;
+}
+
+.r4::selection {
+  background-color: #008000;
+}
+
+.r5::selection {
+  background-color: #0000ff;
+}
+
+.r6::selection {
+  background-color: #4b0082;
+}
+
+.r7::selection {
+  background-color: #ee82ee;
+}

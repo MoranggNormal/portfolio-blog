@@ -43,13 +43,13 @@ const MainProjects = () => {
           />
       ))}
 <button
-        className="absolute left-8 top-1/2 z-10 -translate-y-1/2 transform rounded bg-gray-800/50 p-2 text-white duration-300 hover:opacity-90"
+        className="absolute left-8 top-1/2 z-10 -translate-y-1/2 transform rounded bg-gray-800/50 p-2 text-white duration-300 hover:opacity-90 hover:drop-shadow-3xl"
         onClick={handlePrev}
       >
         <i className="fa-solid fa-arrow-left"></i>
       </button> 
       <button
-        className="absolute right-8 top-1/2 z-10 -translate-y-1/2 transform rounded bg-gray-800/50 p-2 text-white duration-300 hover:opacity-90"
+        className="absolute right-8 top-1/2 z-10 -translate-y-1/2 transform rounded bg-gray-800/50 p-2 text-white duration-300 hover:opacity-90 hover:drop-shadow-3xl"
         onClick={handleNext}
       >
         <i className="fa-solid fa-arrow-right"></i>

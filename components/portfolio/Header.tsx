@@ -32,15 +32,16 @@ const Header = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white">
       <nav className="flex justify-center p-6 lg:px-8" aria-label="Global">
-        <div className="flex gap-x-8 lg:gap-x-12">
+        
+        <div className="flex gap-x-4 lg:gap-x-12">
           {navigation.map((item) => (
             <a
               key={item.name}
               title={item.name}
               href={item.href}
-              className="duration-20 text-xl font-semibold transition-transform hover:scale-150"
+              className="duration-20  text-xl font-semibold transition-transform hover:scale-150"
             >
-              <i className={item.className + ' text-slate-800'}></i>
+              <i className={item.className + ' text-slate-800 p-2 hover:drop-shadow-3xl'}></i>
             </a>
           ))}
         </div>

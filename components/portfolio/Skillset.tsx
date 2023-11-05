@@ -8,6 +8,7 @@ const skills = [
   {
     name: 'Linux',
     className: 'fa-brands fa-linux',
+    easter: true
   },
   {
     name: 'Bash',
@@ -48,6 +49,7 @@ const skills = [
   {
     name: 'React',
     className: 'fa-brands fa-react',
+    easter: true
   },
 ];
 
@@ -66,7 +68,11 @@ const Skillset = () => {
             className="flex w-1/4 flex-col items-center py-4"
             key={skill.name}
           >
-            <i className={skill.className + ' text-4xl text-slate-800'}></i>
+            {skill?.easter ?
+            <i className={skill.className + ' text-4xl transition-transform text-slate-800 hover:drop-shadow-3xl hover:animate-spin '}></i>
+           :
+            <i className={skill.className + ' text-4xl transition-transform text-slate-800 hover:drop-shadow-3xl hover:scale-150'}></i>
+          }
             <span className="mt-2 text-sm font-semibold">{skill.name}</span>
           </div>
         ))}
