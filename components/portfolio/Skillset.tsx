@@ -53,14 +53,14 @@ const skills = [
 
 const Skillset = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-4 ">
+    <div className="flex flex-wrap items-center gap-4 justify-center h-screen content-center">
       <div className="w-full py-12 text-center">
-        <h2 className="px- text-3xl font-semibold lg:text-5xl">
+        <h2 className="text-3xl font-semibold lg:text-5xl">
           Elevating Projects with Technical Know-How
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center py-6">
+      <div className="flex flex-wrap ">
         {skills.map((skill) => (
           <div
             className="flex w-1/4 flex-col items-center py-4"
@@ -71,9 +71,11 @@ const Skillset = () => {
           </div>
         ))}
       </div>
-      <p className="w-full lg:px-40 py-10 leading-6 text-center text-gray-500 ">
+      <p className="w-full lg:px-40 py-20 leading-6 text-center text-gray-500 ">
         In addition to my expertise in the technologies mentioned above, I also
-        have experience with Kubernetes, Terraform, Next.js and more. I am
+        have experience with <b>Kubernetes</b>, <b>Terraform</b>, <b>Next.js</b> and more.
+        <br/>
+        I am
         committed to continuous learning and staying up-to-date with the latest
         advancements in the tech industry.
       </p>
