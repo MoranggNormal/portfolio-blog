@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Formations = () => {
   return (
-    <div className="flex flex-wrap items-center bg-slate-50 py-24 h-screen">
+    <div className="flex flex-wrap items-center bg-slate-50 py-24 h-screen" id="formation">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-center text-3xl font-semibold">
           Education and Training

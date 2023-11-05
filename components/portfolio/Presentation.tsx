@@ -6,7 +6,7 @@ const Presentation = () => {
   const rainbowColors = ["r1", "r2", "r3", "r4", "r5", "r6", "r7"];
 
   return (
-    <div className="bg-slate-50 flex items-center justify-center h-screen">
+    <div className="bg-slate-50 flex items-center justify-center h-screen" id="top">
       <div className="mx-auto max-w-2xl py-4 ">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">

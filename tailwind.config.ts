@@ -20,10 +20,10 @@ const config: Config = {
       },
       dropShadow: {
         '3xl': '0px 0px 8px rgb(126, 46, 224, 0.45)',
-        '4xl': [
-            '0 35px 35px rgba(0, 0, 0, 0.25)',
-            '0 45px 65px rgba(0, 0, 0, 0.15)'
-        ]
+        '4xl': '0px 0px 1px rgb(126, 46, 224, 0.25)'
+      },
+      colors: {
+        'regal-blue': 'rgb(126, 46, 224, 0.85)',
       }
     },
   },

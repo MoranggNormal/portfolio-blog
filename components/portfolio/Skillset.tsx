@@ -55,7 +55,7 @@ const skills = [
 
 const Skillset = () => {
   return (
-    <div className="flex flex-wrap items-center gap-4 justify-center h-screen content-center">
+    <div className="flex flex-wrap items-center gap-4 justify-center h-screen content-center" id="technical-expertise">
       <div className="w-full py-12 text-center">
         <h2 className="text-3xl font-semibold lg:text-5xl">
           Elevating Projects with Technical Know-How

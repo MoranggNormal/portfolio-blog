@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const ProfessionalProfile = () => {
   return (
-    <div className="bg-slate-50 flex items-center justify-center h-screen">
+    <div className="bg-slate-50 flex items-center justify-center h-screen" id="work-history">
       <div className="mx-auto max-w-3xl">
         <h2 className="text-center text-3xl font-semibold">Work History</h2>
 

@@ -6,6 +6,7 @@ import HardAndSoftSkills from '@/components/portfolio/HardAndSoftSkills';
 import Presentation from '@/components/portfolio/Presentation';
 import ProfessionalProfile from '@/components/portfolio/ProfessionalProfile';
 import Skillset from '@/components/portfolio/Skillset';
+import BottomNavigation from '@/components/portfolio/BottomNavigation';
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
       <HardAndSoftSkills />
 
       <LatestBlogPosts />
+
+      <BottomNavigation />
     </div>
   );
 }

@@ -25,7 +25,7 @@ const MainProjects = () => {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden items-center">
+    <div className="relative h-screen w-full overflow-hidden items-center" id="projects">
       <h2 className="text-center text-3xl font-semibold py-28">
           Featured Projects
         </h2>
