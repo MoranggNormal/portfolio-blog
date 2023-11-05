@@ -36,7 +36,7 @@ const navigation = [
 const BottomNavigation = () => {
   return (
 
-    <div className="rounded fixed bottom-10 left-1/2 transform -translate-x-1/2 border-gray-800 drop-shadow-4xl bg-white  p-4  flex justify-center items-center space-x-4">
+    <div className="rounded fixed bottom-10 left-1/2 transform -translate-x-1/2 border-gray-800 ring-1 ring-gray-900/10 bg-white  p-4  flex justify-center items-center space-x-4">
        {navigation.map((item) => (
             <a
               key={item.name}
