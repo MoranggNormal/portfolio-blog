@@ -9,7 +9,7 @@ const Presentation = () => {
       className="flex h-screen items-center justify-center bg-slate-50"
       id="top"
     >
-      <div className="mx-auto max-w-2xl py-4 ">
+      <div className="mx-auto max-w-2xl sm:max-w-sm lg:max-w-2xl py-4">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Euller &nbsp;
@@ -20,7 +20,7 @@ const Presentation = () => {
             ))}
           </h1>
           <p className="mt-6 text-lg">Backend Developer & DevOps Enthusiast</p>
-          <p className="mt-6 text-lg leading-8">
+          <p className="mt-6 text-lg leading-8 mx-4">
             Passionate about efficient backend systems and DevOps practices.
             Specializing in Docker, AWS and databases, building scalable
             infrastructure. Excited to learn and contribute to innovative
