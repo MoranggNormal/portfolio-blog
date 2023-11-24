@@ -2,7 +2,10 @@ import React from 'react';
 
 const HardAndSoftSkills = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-white py-24 lg:flex-row" id="skills">
+    <div
+      className="flex h-screen flex-col items-center justify-center bg-white py-24 lg:flex-row"
+      id="skills"
+    >
       <div className="py-8">
         <h2 className="text-center text-3xl font-semibold">Hard Skills</h2>
 
