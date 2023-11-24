@@ -1,4 +1,6 @@
+"use client"
 import React from 'react';
+import useSimpleLoading from '../hooks/useSimpleLoading';
 
 const skills = [
   {
@@ -54,6 +56,8 @@ const skills = [
 ];
 
 const Skillset = () => {
+  const loading = useSimpleLoading();
+
   return (
     <div className="flex flex-wrap items-center gap-4 justify-center h-screen content-center" id="technical-expertise">
       <div className="w-full py-12 text-center">
@@ -64,23 +68,34 @@ const Skillset = () => {
 
       <div className="flex flex-wrap ">
         {skills.map((skill) => (
-          <div
-            className="flex w-1/4 flex-col items-center py-4"
-            key={skill.name}
-          >
-            {skill?.easter ?
-            <i className={skill.className + ' text-4xl transition-transform text-slate-800 hover:drop-shadow-3xl hover:animate-spin '}></i>
-           :
-            <i className={skill.className + ' text-4xl transition-transform text-slate-800 hover:drop-shadow-3xl hover:scale-150'}></i>
-          }
-            <span className="mt-2 text-sm font-semibold">{skill.name}</span>
-          </div>
+          <React.Fragment key={skill.name}>
+            {loading ?
+              (
+                <div
+                  className="flex w-1/4 flex-col items-center py-4"
+                  key={skill.name}
+                >
+                  <div className="h-10 w-10 bg-gray-300 rounded-full animate-pulse"></div>
+                  <span className="mt-2 text-sm font-semibold">{skill.name}</span>
+                </div>) :
+              (
+                <div
+                  className="flex w-1/4 flex-col items-center py-4 "
+                  key={skill.name}>
+                  {skill?.easter ?
+                    <i className={skill.className + ' h-10 w-10 text-4xl transition-transform text-slate-800 hover:drop-shadow-3xl hover:animate-spin '}></i>
+                    :
+                    <i className={skill.className + ' h-10 w-10 text-4xl transition-transform text-slate-800 hover:drop-shadow-3xl hover:scale-150'}></i>
+                  }
+                  <span className="mt-2 text-sm font-semibold">{skill.name}</span>
+                </div>
+              )}</React.Fragment>
         ))}
       </div>
       <p className="w-full lg:px-40 py-20 leading-6 text-center text-gray-500 ">
         In addition to my expertise in the technologies mentioned above, I also
         have experience with <b>Kubernetes</b>, <b>Terraform</b>, <b>Next.js</b> and more.
-        <br/>
+        <br />
         I am
         committed to continuous learning and staying up-to-date with the latest
         advancements in the tech industry.
