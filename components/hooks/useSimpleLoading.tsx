@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useSimpleLoading = (delay = 1000) => {
+const useSimpleLoading = (delay = 500) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
