@@ -19,7 +19,7 @@ export default function Home() {
 
       <ProfessionalProfile />
 
-      <MainProjects />
+      {/* <MainProjects /> */}
 
       <Formations />
 

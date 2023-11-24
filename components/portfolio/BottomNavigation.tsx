@@ -18,11 +18,11 @@ const navigation = [
     className: 'fa-solid fa-suitcase',
     href: '#work-history',
   },
-  {
-    name: 'Projects',
-    className: 'fa-regular fa-lightbulb',
-    href: '#projects',
-  },
+  // {
+  //   name: 'Projects',
+  //   className: 'fa-regular fa-lightbulb',
+  //   href: '#projects',
+  // },
   {
     name: 'Education',
     className: 'fa-solid fa-book',
