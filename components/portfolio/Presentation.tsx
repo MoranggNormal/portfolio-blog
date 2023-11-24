@@ -24,6 +24,16 @@ const Presentation = () => {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 ">
             <a
+              href="https://api.whatsapp.com/send?phone=5581982053106&text=Ol%C3%A1!%20Cheguei%20at%C3%A9%20aqui%20a%20partir%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20servi%C3%A7o."
+              target="_blank"
+              className="rounded w-[310px] px-4 py-1 font-semibold text-slate-800 ring-1 ring-gray-900/10 transition-colors duration-300 ease-in-out hover:bg-slate-800 hover:text-white hover:ring-gray-900/20 hover:drop-shadow-3xl"
+            >
+              <i className="fa-brands fa-whatsapp  mr-2"></i>
+              Contact Me on WhatsApp
+            </a>
+          </div>
+          <div className="mt-4 flex items-center justify-center gap-x-6 ">
+            <a
               href="#"
               className="rounded px-4 py-1 font-semibold text-slate-800 ring-1 ring-gray-900/10 transition-colors duration-300 ease-in-out hover:bg-slate-800 hover:text-white hover:ring-gray-900/20 hover:drop-shadow-3xl"
             >
