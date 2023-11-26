@@ -33,7 +33,7 @@ const navigation = [
   },
 ];
 
-const BottomNavigation = ({loading}) => {
+const BottomNavigation = ({loading}: any) => {
 
   return (
     <div className="fixed bottom-10 left-1/2 flex -translate-x-1/2 transform items-center justify-center space-x-4 rounded  border-gray-800  bg-white p-4 ring-1 ring-gray-900/10">

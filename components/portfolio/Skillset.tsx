@@ -53,7 +53,7 @@ const skills = [
   },
 ];
 
-const Skillset = ({loading}) => {
+const Skillset = ({loading}:any ) => {
 
   return (
     <div

@@ -28,7 +28,7 @@ const navigation = [
   },
 ];
 
-const Header = ({loading}) => {
+const Header = ({loading}:any ) => {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white">

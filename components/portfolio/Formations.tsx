@@ -4,7 +4,7 @@ import React from 'react';
 import uninter from '../../assets/images/uninter.png';
 import Image from 'next/image';
 
-const Formations = ({loading}) => {
+const Formations = ({loading}:any ) => {
 
   return (
     <div

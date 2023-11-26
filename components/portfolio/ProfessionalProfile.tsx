@@ -3,7 +3,7 @@ import React from 'react';
 import aurynLogo from '../../assets/images/auryn.jpeg';
 import Image from 'next/image';
 
-const ProfessionalProfile = ({loading}) => {
+const ProfessionalProfile = ({loading}:any ) => {
 
   return (
     <div
