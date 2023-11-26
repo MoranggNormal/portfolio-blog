@@ -1,4 +1,4 @@
-const Presentation = ({loading}:any ) => {
+const Presentation = ({ loading }: any) => {
   const lastName = 'Peixoto';
   const rainbowColors = ['r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7'];
 
@@ -7,7 +7,7 @@ const Presentation = ({loading}:any ) => {
       className="flex h-screen items-center justify-center bg-slate-50"
       id="top"
     >
-      <div className="mx-auto max-w-2xl sm:max-w-sm lg:max-w-2xl py-4">
+      <div className="mx-auto max-w-2xl py-4 sm:max-w-sm lg:max-w-2xl">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Euller &nbsp;
@@ -18,7 +18,7 @@ const Presentation = ({loading}:any ) => {
             ))}
           </h1>
           <p className="mt-6 text-lg">Backend Developer & DevOps Enthusiast</p>
-          <p className="mt-6 text-lg leading-8 mx-4">
+          <p className="mx-4 mt-6 text-lg leading-8">
             Passionate about efficient backend systems and DevOps practices.
             Specializing in Docker, AWS and databases, building scalable
             infrastructure. Excited to learn and contribute to innovative
@@ -28,13 +28,13 @@ const Presentation = ({loading}:any ) => {
             <a
               href="https://api.whatsapp.com/send?phone=5581982053106&text=Ol%C3%A1!%20Cheguei%20at%C3%A9%20aqui%20a%20partir%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20servi%C3%A7o."
               target="_blank"
-              className="w-[310px] rounded px-4 py-1 flex items-center justify-center font-semibold text-slate-800 ring-1 ring-gray-900/10 transition-colors duration-300 ease-in-out hover:text-white hover:bg-green-300 hover:ring-green-300"
+              className="flex w-[310px] items-center justify-center rounded px-4 py-1 font-semibold text-slate-800 ring-1 ring-gray-900/10 transition-colors duration-300 ease-in-out hover:bg-green-300 hover:text-white hover:ring-green-300"
             >
-
-              {loading ?
-                <div className="h-4 w-4 mr-2 rounded-full bg-gray-300 animate-pulse"></div>
-                :
-                <i className="fa-brands fa-whatsapp  mr-2"></i>}
+              {loading ? (
+                <div className="mr-2 h-4 w-4 animate-pulse rounded-full bg-gray-300"></div>
+              ) : (
+                <i className="fa-brands fa-whatsapp  mr-2"></i>
+              )}
               Contact Me on WhatsApp
             </a>
           </div>

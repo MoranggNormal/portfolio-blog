@@ -53,8 +53,7 @@ const skills = [
   },
 ];
 
-const Skillset = ({loading}:any ) => {
-
+const Skillset = ({ loading }: any) => {
   return (
     <div
       className="flex h-screen flex-wrap content-center items-center justify-center gap-4"

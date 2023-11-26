@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import Formations from '@/components/portfolio/Formations';
 import Header from '@/components/portfolio/Header';
 import LatestBlogPosts from '@/components/portfolio/LatestBlogPosts';
@@ -11,12 +11,11 @@ import BottomNavigation from '@/components/portfolio/BottomNavigation';
 import useSimpleLoading from '@/components/hooks/useSimpleLoading';
 
 export default function Home() {
-
   const loading = useSimpleLoading();
 
   return (
     <div>
-      <Header loading={loading}/>
+      <Header loading={loading} />
 
       <Presentation loading={loading} />
 

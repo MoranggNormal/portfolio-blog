@@ -28,8 +28,7 @@ const navigation = [
   },
 ];
 
-const Header = ({loading}:any ) => {
-
+const Header = ({ loading }: any) => {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white">
       <nav className="flex justify-center p-6 lg:px-8" aria-label="Global">

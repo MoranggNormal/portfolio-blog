@@ -3,8 +3,7 @@ import React from 'react';
 import aurynLogo from '../../assets/images/auryn.jpeg';
 import Image from 'next/image';
 
-const ProfessionalProfile = ({loading}:any ) => {
-
+const ProfessionalProfile = ({ loading }: any) => {
   return (
     <div
       className="flex h-screen items-center justify-center bg-slate-50"

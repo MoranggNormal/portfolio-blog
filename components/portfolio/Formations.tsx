@@ -4,8 +4,7 @@ import React from 'react';
 import uninter from '../../assets/images/uninter.png';
 import Image from 'next/image';
 
-const Formations = ({loading}:any ) => {
-
+const Formations = ({ loading }: any) => {
   return (
     <div
       className="flex h-screen flex-wrap items-center bg-slate-50 py-24"

@@ -1,12 +1,12 @@
-import prisma from "@/lib/prisma";
-import { NextResponse } from "next/server";
+import prisma from '@/lib/prisma';
+import { NextResponse } from 'next/server';
 
 export async function GET(request: Request) {
   const users = await prisma.users.findMany({
     select: {
       name: true,
-      email: true
-    }
+      email: true,
+    },
   });
 
   return NextResponse.json(users);
@@ -20,6 +20,6 @@ export async function POST(request: Request) {
 
   return new NextResponse(JSON.stringify(user), {
     status: 201,
-    headers: { "Content-Type": "application/json" },
+    headers: { 'Content-Type': 'application/json' },
   });
 }

@@ -2,11 +2,10 @@
 // import { users } from "@prisma/client";
 
 // const getUsers = cache(() =>
-  // fetch("http://localhost:3000/api/users").then((res) => res.json())
+// fetch("http://localhost:3000/api/users").then((res) => res.json())
 // );
 
 const Blog = () => {
-
   // let users = React.use<users[]>(getUsers());
 
   return (
@@ -16,7 +15,7 @@ const Blog = () => {
         user.name
       ))} */}
     </div>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
