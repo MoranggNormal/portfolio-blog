@@ -18,7 +18,7 @@ export default function Home() {
     <div>
       <Header loading={loading}/>
 
-      <Presentation />
+      <Presentation loading={loading} />
 
       <Skillset loading={loading} />
 
