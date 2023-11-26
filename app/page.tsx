@@ -1,3 +1,4 @@
+"use client"
 import Formations from '@/components/portfolio/Formations';
 import Header from '@/components/portfolio/Header';
 import LatestBlogPosts from '@/components/portfolio/LatestBlogPosts';
@@ -7,27 +8,31 @@ import Presentation from '@/components/portfolio/Presentation';
 import ProfessionalProfile from '@/components/portfolio/ProfessionalProfile';
 import Skillset from '@/components/portfolio/Skillset';
 import BottomNavigation from '@/components/portfolio/BottomNavigation';
+import useSimpleLoading from '@/components/hooks/useSimpleLoading';
 
 export default function Home() {
+
+  const loading = useSimpleLoading();
+
   return (
     <div>
-      <Header />
+      <Header loading={loading}/>
 
       <Presentation />
 
-      <Skillset />
+      <Skillset loading={loading} />
 
-      <ProfessionalProfile />
+      <ProfessionalProfile loading={loading} />
 
       {/* <MainProjects /> */}
 
-      <Formations />
+      <Formations loading={loading} />
 
       <HardAndSoftSkills />
 
       <LatestBlogPosts />
 
-      <BottomNavigation />
+      <BottomNavigation loading={loading} />
     </div>
   );
 }

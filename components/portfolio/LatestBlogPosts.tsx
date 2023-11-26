@@ -1,5 +1,3 @@
-import React from 'react';
-
 const LatestBlogPosts = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-center bg-slate-50 py-24">

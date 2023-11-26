@@ -3,10 +3,8 @@ import React from 'react';
 
 import uninter from '../../assets/images/uninter.png';
 import Image from 'next/image';
-import useSimpleLoading from '../hooks/useSimpleLoading';
 
-const Formations = () => {
-  const loading = useSimpleLoading();
+const Formations = ({loading}) => {
 
   return (
     <div

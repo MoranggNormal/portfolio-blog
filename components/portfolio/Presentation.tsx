@@ -1,9 +1,7 @@
-'use client';
-
 const Presentation = () => {
   const lastName = 'Peixoto';
   const rainbowColors = ['r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7'];
-
+  
   return (
     <div
       className="flex h-screen items-center justify-center bg-slate-50"
@@ -30,7 +28,7 @@ const Presentation = () => {
             <a
               href="https://api.whatsapp.com/send?phone=5581982053106&text=Ol%C3%A1!%20Cheguei%20at%C3%A9%20aqui%20a%20partir%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20servi%C3%A7o."
               target="_blank"
-              className="w-[310px] rounded px-4 py-1 font-semibold text-slate-800 ring-1 ring-gray-900/10 transition-colors duration-300 ease-in-out hover:bg-slate-800 hover:text-white hover:ring-gray-900/20 hover:drop-shadow-3xl"
+              className="w-[310px] rounded px-4 py-1 font-semibold text-slate-800 ring-1 ring-gray-900/10 transition-colors duration-300 ease-in-out hover:text-white hover:bg-green-300 hover:ring-green-300"
             >
               <i className="fa-brands fa-whatsapp  mr-2"></i>
               Contact Me on WhatsApp

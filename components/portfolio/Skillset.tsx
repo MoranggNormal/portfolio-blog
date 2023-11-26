@@ -1,6 +1,4 @@
-'use client';
 import React from 'react';
-import useSimpleLoading from '../hooks/useSimpleLoading';
 
 const skills = [
   {
@@ -55,8 +53,7 @@ const skills = [
   },
 ];
 
-const Skillset = () => {
-  const loading = useSimpleLoading();
+const Skillset = ({loading}) => {
 
   return (
     <div

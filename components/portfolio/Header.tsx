@@ -1,6 +1,4 @@
-'use client';
 import React from 'react';
-import useSimpleLoading from '../hooks/useSimpleLoading';
 
 const navigation = [
   {
@@ -30,8 +28,7 @@ const navigation = [
   },
 ];
 
-const Header = () => {
-  const loading = useSimpleLoading();
+const Header = ({loading}) => {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white">

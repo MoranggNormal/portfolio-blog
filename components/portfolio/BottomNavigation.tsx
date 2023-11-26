@@ -1,6 +1,4 @@
-'use client';
 import React from 'react';
-import useSimpleLoading from '../hooks/useSimpleLoading';
 
 const navigation = [
   {
@@ -35,8 +33,7 @@ const navigation = [
   },
 ];
 
-const BottomNavigation = () => {
-  const loading = useSimpleLoading();
+const BottomNavigation = ({loading}) => {
 
   return (
     <div className="fixed bottom-10 left-1/2 flex -translate-x-1/2 transform items-center justify-center space-x-4 rounded  border-gray-800  bg-white p-4 ring-1 ring-gray-900/10">

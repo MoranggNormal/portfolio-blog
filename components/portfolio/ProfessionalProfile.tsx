@@ -1,12 +1,9 @@
-'use client';
 import React from 'react';
 
 import aurynLogo from '../../assets/images/auryn.jpeg';
 import Image from 'next/image';
-import useSimpleLoading from '../hooks/useSimpleLoading';
 
-const ProfessionalProfile = () => {
-  const loading = useSimpleLoading();
+const ProfessionalProfile = ({loading}) => {
 
   return (
     <div
