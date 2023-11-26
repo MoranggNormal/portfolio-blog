@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model categories {
+  id    BigInt  @id @default(autoincrement())
+  name  String  @unique
+  posts posts[]
+}
+
+model comments {
+  id         BigInt    @id @default(autoincrement())
+  content    String
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  user_id    BigInt
+  post_id    BigInt
+  posts      posts     @relation(fields: [post_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users      users     @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([post_id], map: "idx_comments_post_id")
+  @@index([user_id], map: "idx_comments_user_id")
+}
+
+model posts {
+  id          BigInt     @id @default(autoincrement())
+  title       String
+  content     String
+  created_at  DateTime?  @default(now()) @db.Timestamptz(6)
+  user_id     BigInt
+  category_id BigInt
+  comments    comments[]
+  categories  categories @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users       users      @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([category_id], map: "idx_posts_category_id")
+  @@index([user_id], map: "idx_posts_user_id")
+}
+
+model users {
+  id       BigInt     @id @default(autoincrement())
+  name     String
+  email    String     @unique
+  password String
+  comments comments[]
+  posts    posts[]
+}
