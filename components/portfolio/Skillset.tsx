@@ -103,7 +103,7 @@ const Skillset = ({ loading }: any) => {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  const [bossYells, setBossYells] = useState({});
+  const [bossYells, setBossYells] = useState<any>("");
   const [bossImage, setBossImage] = useState(Goshnar.src);
 
   const toggleDarkMode = () => {
