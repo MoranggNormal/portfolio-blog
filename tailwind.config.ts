@@ -6,8 +6,13 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
+  redMode: 'class',
   theme: {
     extend: {
+      backdropBlur: {
+        ss: '1px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -21,6 +26,7 @@ const config: Config = {
       dropShadow: {
         '3xl': '0px 0px 8px rgb(126, 46, 224, 0.45)',
         '4xl': '0px 0px 1px rgb(126, 46, 224, 0.25)',
+        '5xl': '0px 0px 4px rgb(126, 46, 224, 0.75)',
       },
       colors: {
         'regal-blue': 'rgb(126, 46, 224, 0.85)',

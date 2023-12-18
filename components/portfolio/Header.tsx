@@ -30,7 +30,7 @@ const navigation = [
 
 const Header = ({ loading }: any) => {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white transition-all dark:bg-black dark:border-red-500">
       <nav className="flex justify-center p-6 lg:px-8" aria-label="Global">
         <div className="flex gap-x-4 lg:gap-x-12">
           {navigation.map((item) => (
@@ -44,7 +44,7 @@ const Header = ({ loading }: any) => {
                   className="duration-20 relative flex items-center text-xl font-semibold transition-transform hover:scale-150"
                 >
                   <i
-                    className={`${item.className} h-10 w-10 p-2 text-slate-800 hover:drop-shadow-3xl`}
+                    className={`${item.className} h-10 w-10 p-2 text-slate-800 transition-all dark:text-red-500 hover:drop-shadow-3xl`}
                   ></i>
                 </a>
               )}

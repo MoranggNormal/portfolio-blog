@@ -35,7 +35,7 @@ const navigation = [
 
 const BottomNavigation = ({ loading }: any) => {
   return (
-    <div className="fixed bottom-6 left-1/2 flex -translate-x-1/2 transform items-center justify-center space-x-4 rounded  border-gray-800  bg-white p-4 ring-1 ring-gray-900/10">
+    <div className="fixed bottom-6 left-1/2 flex -translate-x-1/2 transform items-center justify-center space-x-4 rounded  border-gray-800 transition-all dark:border-red-500  bg-white dark:bg-black p-4 ring-1 ring-gray-900/10 dark:ring-red-500">
       {navigation.map((item) => (
         <React.Fragment key={item.name}>
           {loading ? (
@@ -47,7 +47,7 @@ const BottomNavigation = ({ loading }: any) => {
               className="duration-20 h-8 w-8 text-center text-xl font-semibold transition-transform hover:scale-150"
             >
               <i
-                className={`${item.className} px-2 text-slate-800 hover:drop-shadow-3xl`}
+                className={`${item.className} px-2 text-slate-800 transition-all dark:text-red-500 hover:drop-shadow-3xl`}
               ></i>
             </a>
           )}
