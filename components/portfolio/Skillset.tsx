@@ -129,15 +129,26 @@ const Skillset = ({ loading }: any) => {
     }
   };
 
+  const clearYells = (yell: string) => {
+    if (yell.includes('LADY')) {
+      setTimeout(() => {
+        setBossYells("")
+      }, 2500);
+
+      return
+    }
+    setBossYells("")
+  }
+
   useEffect(() => {
-    if(darkMode){
+    if (darkMode) {
       setTimeout(() => {
         toggleDarkMode()
       }, 4500);
     }
 
   }, [darkMode])
-  
+
 
 
   return (
@@ -213,7 +224,7 @@ const Skillset = ({ loading }: any) => {
                     alt="Boss from Tibia"
                     className="drop-shadow-5xl"
                     onMouseEnter={() => castYells(yells, index, image)}
-                    onMouseOut={() => setBossYells('')}
+                    onMouseOut={() => clearYells(bossYells[index])}
                   />
                   <div className={`absolute top-6 transform translate-x-[-40%] font-semibold text-sm transition-opacity duration-300 ${bossYells[index] ? 'opacity-100' : 'opacity-0 invisible'} ${bossYells[index]?.includes('LADY') ? 'text-red-500' : 'text-orange-500'}`}>{bossYells[index]}</div>
 
