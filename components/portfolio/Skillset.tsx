@@ -111,7 +111,7 @@ const Skillset = ({ loading }: any) => {
     document.documentElement.classList.toggle('dark', !darkMode);
   };
 
-  const castYells = (yells, index, images) => {
+  const castYells = (yells: string | any[], index: number, images: string | any[]) => {
     if (yells.length > 0) {
       const sortYell = Math.floor(Math.random() * yells.length);
       const sortedYell = yells[sortYell];
