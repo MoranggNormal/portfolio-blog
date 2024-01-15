@@ -35,7 +35,7 @@ const ProfessionalProfile = ({ loading }: any) => {
                 • Auryn Web to Print
               </p>
               <p className="text-center text-gray-500 lg:text-left">
-                • 04/2023 - Current
+                • 04/2022 - 01/2024
               </p>
             </div>
           </div>
