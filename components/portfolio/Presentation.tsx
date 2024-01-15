@@ -47,7 +47,7 @@ const Presentation = ({ loading }: any) => {
             </a>
             <a
               href="#"
-              className="rounded px-4 py-1 font-semibold text-slate-800 transition-colors duration-300 ease-in-out hover:bg-slate-800 hover:text-white hover:ring-1 hover:ring-gray-900/20 hover:drop-shadow-3xl"
+              className="cursor-default rounded px-4 py-1 font-semibold text-slate-800 transition-colors duration-300 ease-in-out hover:bg-slate-800 hover:text-white hover:ring-1 hover:ring-gray-900/20 hover:drop-shadow-3xl"
             >
               Visit my Blog <span aria-hidden="true">→</span>
             </a>
