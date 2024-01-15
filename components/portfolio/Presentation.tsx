@@ -26,7 +26,7 @@ const Presentation = ({ loading }: any) => {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 ">
             <a
-              href="https://api.whatsapp.com/send?phone=5581982053106&text=Ol%C3%A1!%20Cheguei%20at%C3%A9%20aqui%20a%20partir%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20servi%C3%A7o."
+              href="https://w.app/epeixoto"
               target="_blank"
               className="flex w-[310px] items-center justify-center rounded px-4 py-1 font-semibold text-slate-800 ring-1 ring-gray-900/10 transition-colors duration-300 ease-in-out hover:bg-green-300 hover:text-white hover:ring-green-300"
             >
