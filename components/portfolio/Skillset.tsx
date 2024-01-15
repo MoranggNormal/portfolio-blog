@@ -112,14 +112,17 @@ const Skillset = ({ loading }: any) => {
   };
 
   const castYells = (yells: string | any[], index: number, images: string | any[]) => {
+
     if (yells.length > 0) {
       const sortYell = Math.floor(Math.random() * yells.length);
       const sortedYell = yells[sortYell];
+
       if (yells[sortYell].includes('LADY')) {
         setTimeout(() => {
           toggleDarkMode()
         }, 2500);
       }
+
       setBossYells({ ...bossYells, [index]: sortedYell });
     } else {
       const sortImage = Math.floor(Math.random() * images.length);
@@ -130,6 +133,7 @@ const Skillset = ({ loading }: any) => {
   };
 
   const clearYells = (yell: string) => {
+
     if (yell.includes('LADY')) {
       setTimeout(() => {
         setBossYells("")
@@ -137,6 +141,7 @@ const Skillset = ({ loading }: any) => {
 
       return
     }
+    
     setBossYells("")
   }
 
@@ -146,17 +151,17 @@ const Skillset = ({ loading }: any) => {
         toggleDarkMode()
       }, 4500);
     }
-
   }, [darkMode])
 
 
 
   return (
     <div
-      className={`flex h-screen transition-all dark:bg-black content-center pt-40 justify-center w-full ${darkMode} ? 'dark' : ''`}
+      className={`flex flex-col md:flex-row min-h-screen transition-all dark:bg-black content-center pt-40 justify-center w-full ${darkMode ? 'dark' : ''}`}
       id="technical-expertise">
 
-      <div className="w-1/2 ">
+      <div className="w-full md:w-1/2">
+
         <div className="w-full py-12 text-center">
           <h2 className="text-3xl font-semibold lg:text-4xl dark:text-red-500">
             Elevating Projects with Technical Know-How
@@ -204,15 +209,15 @@ const Skillset = ({ loading }: any) => {
         </div>
         <p className="w-full py-20 text-center leading-6 text-gray-500 dark:text-red-500 lg:px-20 ">
           In addition to my expertise in the technologies mentioned above, I also
-          have experience with <b>Kubernetes</b>, <b>Terraform</b>, <b>Next.js</b>{' '}
+          have experience with <b>Next.js</b>, <b>Django</b> and <b>Terraform</b>, {' '}
           and more.
           <br />I am committed to continuous learning and staying up-to-date with
           the latest advancements in the tech industry.
         </p>
       </div>
 
-      <div className="w-1/2 ">
-        <div className="text-gray-500 dark:text-red-500 mx-20">
+      <div className="w-full md:w-1/2">
+        <div className="text-gray-500 dark:text-red-500 my-4 mx-4 md:mx-20">
           {
             texts.map(({ image, text, yells }, index) => (
               <React.Fragment key={index}>
@@ -222,7 +227,7 @@ const Skillset = ({ loading }: any) => {
                     width={128}
                     height={128}
                     alt="Boss from Tibia"
-                    className="drop-shadow-5xl"
+                    className="drop-shadow-5xl w-[100%] md:w-auto"
                     onMouseEnter={() => castYells(yells, index, image)}
                     onMouseOut={() => clearYells(bossYells[index])}
                   />
