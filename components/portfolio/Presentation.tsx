@@ -20,7 +20,7 @@ const Presentation = ({ loading }: any) => {
           <p className="mt-6 text-lg">Backend Developer & DevOps Enthusiast</p>
           <p className="mx-4 mt-6 text-lg leading-8">
             Passionate about efficient backend systems and DevOps practices.
-            Specializing in Docker, AWS and databases, building scalable
+            Specializing in Docker, AWS and Databases, building scalable
             infrastructure. Excited to learn and contribute to innovative
             projects.
           </p>
@@ -40,7 +40,7 @@ const Presentation = ({ loading }: any) => {
           </div>
           <div className="mt-4 flex items-center justify-center gap-x-6 ">
             <a
-              href="#"
+              href="/cv.pdf"
               className="rounded px-4 py-1 font-semibold text-slate-800 ring-1 ring-gray-900/10 transition-colors duration-300 ease-in-out hover:bg-slate-800 hover:text-white hover:ring-gray-900/20 hover:drop-shadow-3xl"
             >
               Download CV
