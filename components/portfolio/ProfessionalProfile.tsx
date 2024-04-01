@@ -56,7 +56,7 @@ const ProfessionalProfile = ({ loading }: any) => {
                     width={250}
                     height={250}
                     alt="Auryn Web to Print"
-                    className="mx-auto h-20 w-20 rounded transition-all hover:scale-110"
+                    className="mx-auto h-20 w-20 rounded"
                   />
                 )}
               </div>
