@@ -3,7 +3,7 @@ import React from 'react';
 const HardAndSoftSkills = () => {
   return (
     <div
-      className="flex h-screen flex-col items-center justify-center bg-white py-24 lg:flex-row"
+      className="flex h-screen flex-col items-center justify-center bg-slate-50 py-24 lg:flex-row"
       id="skills"
     >
       <div className="py-8">
