@@ -3,6 +3,7 @@ import React from 'react';
 import aurynLogo from '../../assets/images/auryn.jpeg';
 import pixelLaboLogo from '../../assets/images/pixellabo.png';
 import revolutionLogo from '../../assets/images/revolution.jpeg';
+import mtrekLogo from '../../assets/images/mtrek.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -17,7 +18,7 @@ const ProfessionalProfile = ({ loading }: any) => {
 
         <div className="mt-8 w-full space-y-8 lg:flex">
           <div className="flex w-full flex-col justify-center md:flex-row">
-            <Link href="https://pixellabo.com.br" target='_blank'>
+            <Link href="https://pixellabo.com.br" target="_blank">
               <div>
                 {loading ? (
                   <div className="mx-auto h-[80px] w-[80px] animate-pulse rounded bg-gray-300"></div>
@@ -26,7 +27,7 @@ const ProfessionalProfile = ({ loading }: any) => {
                     src={pixelLaboLogo.src}
                     width={250}
                     height={250}
-                    alt="Auryn Web to Print"
+                    alt="Pixel Labo"
                     className="mx-auto h-20 w-20 rounded transition-all hover:scale-110"
                   />
                 )}
@@ -45,21 +46,49 @@ const ProfessionalProfile = ({ loading }: any) => {
             </div>
           </div>
         </div>
+
         <div className="mt-8 w-full space-y-8 lg:flex">
           <div className="flex w-full flex-col  md:flex-row">
-              <div>
-                {loading ? (
-                  <div className="mx-auto h-[80px] w-[80px] animate-pulse rounded bg-gray-300"></div>
-                ) : (
-                  <Image
-                    src={revolutionLogo.src}
-                    width={250}
-                    height={250}
-                    alt="Auryn Web to Print"
-                    className="mx-auto h-20 w-20 rounded transition-all hover:scale-110"
-                  />
-                )}
-              </div>
+            <div>
+              {loading ? (
+                <div className="mx-auto h-[80px] w-[80px] animate-pulse rounded bg-gray-300"></div>
+              ) : (
+                <Image
+                  src={mtrekLogo.src}
+                  width={250}
+                  height={250}
+                  alt="Mtrek"
+                  className="mx-auto h-20 w-20 rounded transition-all hover:scale-110"
+                />
+              )}
+            </div>
+            <div className="flex flex-col justify-center px-8 lg:px-8">
+              <h3 className="py-4 text-center text-xl font-semibold lg:py-0 lg:text-left">
+                Front End Developer
+              </h3>
+              <p className="text-center text-gray-500 lg:text-left">• Mtrek</p>
+              <p className="text-center text-gray-500 lg:text-left">
+                • 05/2024 - Current
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 w-full space-y-8 lg:flex">
+          <div className="flex w-full flex-col  md:flex-row">
+            <div>
+              {loading ? (
+                <div className="mx-auto h-[80px] w-[80px] animate-pulse rounded bg-gray-300"></div>
+              ) : (
+                <Image
+                  src={revolutionLogo.src}
+                  width={250}
+                  height={250}
+                  alt="Instituto Revolution"
+                  className="mx-auto h-20 w-20 rounded transition-all hover:scale-110"
+                />
+              )}
+            </div>
             <div className="flex flex-col justify-center px-8 lg:px-8">
               <h3 className="py-4 text-center text-xl font-semibold lg:py-0 lg:text-left">
                 Python Developer
